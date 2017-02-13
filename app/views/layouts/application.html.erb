@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsDemo</title>
+    <title>RailsCassi</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="https://bootswatch.com/cerulean/bootstrap.min.css">
+ 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     
+
   </head>
 
   <body>
-    <%= yield %>
+	  
+	 <%= render "layouts/header" %>
+	<div id="wrap">
+		<div id="main" class="container clear-top">
+			<%= yield %>
+		</div>
+	</div> 	
+    <%= render "layouts/footer" %>
   </body>
 </html>

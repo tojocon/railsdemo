@@ -1,0 +1,27 @@
+
+
+   <script>
+	ReactRailsUJS.mountComponents()
+</script>
+
+<h1>React Demo </h1>
+<p>under development</p>
+
+
+<div data-react-class="basic" data-react-props="{&quot;name&quot;:&quot;John&quot;}"></div>
+
+
+<div id="root"><div>
+
+
+
+<div>
+<%= react_component('basic')%>
+</div>
+
+<div>
+<%= react_component('Message3')%>
+</div>
+
+ 
+<p>end section</p>

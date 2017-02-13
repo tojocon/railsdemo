@@ -1,0 +1,76 @@
+
+
+  <h1>Toby's Bootstrap Demo</h1>
+  
+ 
+
+    <p>&nbsp;</p>
+  
+   <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Do a modal or blackout window</button>
+    <p>&nbsp;</p>
+    
+   
+   <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Do a Pop-up</button>
+   
+
+
+   <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Toby's Modal Pop-up.</h4>
+      </div>
+      <div class="modal-body">
+        <p>background could be blocked if we want.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+   
+   
+   
+   
+  <p>&nbsp;</p>
+  <div class="panel panel-default">
+    <div class="panel-heading">Some bootstrap glyphs in a panel</div>
+    <div class="panel-body text-center">   
+		
+         
+        
+         <span class="glyphicon glyphicon-signal"></span>
+          <span class="glyphicon glyphicon-ok"></span>
+           <span class="glyphicon glyphicon-star-empty"></span>
+           <span class="glyphicon glyphicon-user"></span>
+             <span class="glyphicon glyphicon-cog"></span>
+             <span class="glyphicon glyphicon-th"></span>
+    </div>
+  </div>
+ 
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="/">Home</a></li>
+    
+      <li><a href="/react_demo/index">React</a></li>
+      <li><a href="/bootstrap_demo/index">Bootstrap</a></li>
+      <li><a href="/post_to_databases">Rails DB Scaffold</a></li>
+  </ul>
+  
+  
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+
+
+
+
+
