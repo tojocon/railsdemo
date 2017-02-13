@@ -1,0 +1,1 @@
+json.array! @post_to_databases, partial: 'post_to_databases/post_to_database', as: :post_to_database

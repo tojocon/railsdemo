@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Post To Databases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @post_to_databases.each do |post_to_database| %>
+      <tr>
+        <td><%= post_to_database.name %></td>
+        <td><%= post_to_database.title %></td>
+        <td><%= post_to_database.content %></td>
+        <td><%= link_to 'Show', post_to_database %></td>
+        <td><%= link_to 'Edit', edit_post_to_database_path(post_to_database) %></td>
+        <td><%= link_to 'Destroy', post_to_database, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post To Database', new_post_to_database_path %>

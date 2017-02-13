@@ -1,0 +1,1 @@
+json.partial! "post_to_databases/post_to_database", post_to_database: @post_to_database

@@ -1,0 +1,2 @@
+class PostToDatabase < ApplicationRecord
+end

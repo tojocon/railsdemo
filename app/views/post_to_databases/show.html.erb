@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @post_to_database.name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @post_to_database.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @post_to_database.content %>
+</p>
+
+<%= link_to 'Edit', edit_post_to_database_path(@post_to_database) %> |
+<%= link_to 'Back', post_to_databases_path %>

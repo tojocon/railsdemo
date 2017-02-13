@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :post_to_databases
   get 'bootstrap_demo/index'
 
   get 'react_demo/index'
